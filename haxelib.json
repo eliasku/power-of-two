@@ -1,0 +1,16 @@
+{
+	"name": "power-of-two",
+	"license": "None",
+	"tags": [
+		"utility",
+		"math"
+	],
+	"classPath": "src",
+	"description": "Power of two math utility for Haxe",
+	"contributors": [
+		"eliasku"
+	],
+	"releasenote": "Initial release",
+	"version": "1.0.0",
+	"url": "https://github.com/eliasku/power-of-two"
+}
