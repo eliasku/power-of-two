@@ -4,19 +4,29 @@ package hxutil.math;
 class PowerOfTwo {
 
 	public static function next(x:Int):Int {
-		var n:Int = 1;
-		while (n <= x) {
-			n = n << 1;
+		x |= x >> 1;
+		x |= x >> 2;
+		x |= x >> 4;
+		x |= x >> 8;
+		x |= x >> 16;
+		return x + 1;
+	}
+
+	public static function check(x:Int):Bool {
+		return x != 0 && (x & (x - 1)) == 0;
+	}
+
+	public static function require(x:Int):Int {
+		if(x == 0) {
+			return 1;
 		}
-		return n;
-	}
-
-	public static function check(value:Int):Bool {
-		return value != 0 && (value & (value - 1)) == 0;
-	}
-
-	public static function require(value:Int):Int {
-		return check(value) ? value : next(value);
+		--x;
+		x |= x >> 1;
+		x |= x >> 2;
+		x |= x >> 4;
+		x |= x >> 8;
+		x |= x >> 16;
+		return x + 1;
 	}
 
 }
