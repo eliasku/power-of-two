@@ -1,6 +1,6 @@
 {
 	"name": "power-of-two",
-	"license": "None",
+	"license": "MIT",
 	"tags": [
 		"utility",
 		"math"
@@ -11,6 +11,6 @@
 		"eliasku"
 	],
 	"releasenote": "Initial release",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"url": "https://github.com/eliasku/power-of-two"
 }

@@ -24,8 +24,8 @@ class PowerOfTwoMake extends hxmake.Module {
 				ext.config.description = "Power of two math utility for Haxe";
 				ext.config.contributors = ["eliasku"];
 				ext.config.url = "https://github.com/eliasku/power-of-two";
-				ext.config.license = "None";
-				ext.config.version = "1.0.0";
+				ext.config.license = "MIT";
+				ext.config.version = "0.0.1";
 				ext.config.releasenote = "Initial release";
 				ext.config.tags = ["utility", "math"];
 
