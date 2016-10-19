@@ -34,7 +34,7 @@ class PowerOfTwoMake extends hxmake.Module {
 		);
 
 		var tt = new TestTask();
-		tt.targets = ["interp", "neko", "swf", "js", "node", "cpp", "java", "cs", "php", "python"];
+		tt.targets = ["interp", "neko", "swf", "js", "node", "cpp", "java", "cs"];
 		tt.libraries = ["power-of-two"];
 		task("test", tt);
 	}
