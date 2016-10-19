@@ -1,8 +1,12 @@
 package hxutil.math;
 
+/**
+	Power Of Two integers utility
+**/
 @:final
 class PowerOfTwo {
 
+	/** Returns the next power of two. */
 	public static function next(x:Int):Int {
 		x |= x >> 1;
 		x |= x >> 2;
@@ -12,10 +16,15 @@ class PowerOfTwo {
 		return x + 1;
 	}
 
+	/** Checks if value is power of two **/
 	public static function check(x:Int):Bool {
 		return x != 0 && (x & (x - 1)) == 0;
 	}
 
+	/**
+		Returns the specified value if the value is already a power of two.
+		Returns next power of two else.
+	**/
 	public static function require(x:Int):Int {
 		if(x == 0) {
 			return 1;
